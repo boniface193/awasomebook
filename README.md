@@ -1,101 +1,203 @@
-# HTML & CSS3 & JavaScript Course
+# my-portfolio
+<a name="readme-top"></a>
 
-If you are not familiar with linters, read [root level README](../README.md).
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-## Set-up GitHub Actions
+Modify this file to match your project and remove sections that don't apply.
 
-Please do the following **steps in this order**:
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-   - **Remember** to use the file linked above
-   - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub actions checks:
+After you're finished please remove all the comments and instructions!
+-->
 
-![gh actions checks](../assets/images/gh-actions-html-css-checks.png)
+<div align="center">
 
-Click on the `Details` link of each action to see the full output and the errors that need to be fixed:
+  <br/>
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+  <h3><b>Microverse README Template</b></h3>
 
-## Set-up linters in your local env
+</div>
 
-**Note**: The `npm` package manager is going to create a `node_modules` directory to install all of your dependencies. You shouldn't commit that directory. To avoid that, you can create a [`.gitignore`](https://git-scm.com/docs/gitignore) file and add `node_modules` to it:
+<!-- TABLE OF CONTENTS -->
 
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+   - [🚀 Live Demo](#live-demo)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [Awesome-Book] <a name="about-project"></a>
+
+> In this project, i builded a basic website that allows users to add/remove books from a list. i achieved that by using JavaScript objects and arrays. i also need to dynamically modify the DOM and add basic events.
+
+**[Awesome-Book]**
+
+## 🛠 Built With <a name="built-with"></a>
+
+<!-- LIVE DEMO -->
+
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+- [Live Demo Link](https://boniface193.github.io/my-portfolio/) -->
+
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+html
+</details>
+
+<details>
+ JavaScript
+</details>
+
+<!-- Features -->
+### Key Features <a name="key-features"></a>
+
+> preserve data in the browser.
+
+- When the user changes the content of any input field, the data is saved to the local storage
+- When the user loads the page, if there is any data in the local storage the data are showned.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
+
+git clone https://github.com/boniface193/awasomebook.git
+
+cd awasomebook
+
+npm install
+
+### Prerequisites
+
+In order to run this project you need:
+
+Node js
+
+<!--
+Example command:
+
+```sh
+ gem install rails
 ```
-# .gitignore
-node_modules/
+ -->
+
+### Setup
+
+Clone this repository to your desired folder:
+
+<!--
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
 ```
+--->
 
-### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+### Install
 
-An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more.
+Install this project with:
 
-You can get the Lighthouse report by any of the following ways:
+npm install
 
-- [In Chrome DevTools](https://developers.google.com/web/tools/lighthouse#devtools)
-- [From the command line](https://developers.google.com/web/tools/lighthouse#cli)
-- [As a Node module](https://developers.google.com/web/tools/lighthouse#programmatic)
-- [From a web UI](https://developers.google.com/web/tools/lighthouse#psi)
+<!--
+Example command:
 
-To access the report generated by Lighthouse on your pull request, click the `Details` link for the `Linters/Lighthouse` check and you will see the full output of the action:
+```sh
+  cd my-project
+  gem install
+```
+--->
 
-![lighthouse report](../assets/images/lighthouse-report.png)
+<!-- AUTHORS -->
 
-### [Webhint](https://webhint.io/)
+## 👥 Authors <a name="authors"></a>
 
-A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors.
+> Mention all of the collaborators of this project.
 
-**NOTE:** If you are running on Windows, you need to initialize npm to create `package.json` file. 
-   ```
-   npm init -y
-   ```
+👤 **Author1**
+Ikechukwu
 
-1. Run
-   ```
-   npm install --save-dev hint@7.x
-   ```
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.hintrc](.hintrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run
-   ```
-   npx hint .
-   ```
-5. Fix validation errors.
+- GitHub: [@boniface193](https://github.com/boniface193)
+- Twitter: [@bidtechnologies](https://twitter.com/bidtechnologies)
+- LinkedIn: [boniface-ikechukwu](https://www.linkedin.com/in/boniface-ikechukwu/)
 
-### [Stylelint](https://stylelint.io/)
+👤 **Author2**
+Phone Khaing Hein 
 
-A mighty, modern linter that helps you avoid errors and enforce conventions in your styles.
+- GitHub: [@boniface193](https://github.com/Rimuru-Tempest-26)
 
-1. Run
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+<!-- FUTURE FEATURES -->
+<!-- 
+## 🔭 Future Features <a name="future-features"></a>
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+> Client side validation to validate contact form
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/usage/options) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+- [ ] When the user submits the form, you check if the email is in lower case.
+- [ ] If the validation is not OK, you show an error message to the user near the submit button informing them of the error and the form is not sent.
 
-### [ESLint](https://eslint.org/)
+> Preserve data in the browser
 
-1. Run 
-   ```
-   npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-   ``` 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+- [ ] When the user changes the content of any input field, the data is saved to the local storage.
+- [ ] When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
 
-2. Copy [.eslintrc.json](./.eslintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint .` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Eslint](https://eslint.org/docs/latest/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+<!-- 
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
